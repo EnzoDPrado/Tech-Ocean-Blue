@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+body {
+    background-color: #C0E8FF;
+    font-family: 'Quicksand';
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 40%;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre toda a área da tela */
+}
+
+/* Estilo do conteúdo */
+.content {
+    width: 90%;
+    right: 5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    color: white; /* Ajuste conforme necessário */
+    font-size: 35pt;
+}
+
+.content p {
+    color: #dafaff;
+    font-size: 25pt;
+    width: 80%;
+    font-weight: 400;
+}
+
+.content-texts {
+    width: 50%;
+}
+
+.initial {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.ourSolution, .findBotTitle {
+    color: #0C0059;
+    font-size: 35pt;
+    margin-top: 30px;
+    margin-left: 30px;
+    max-height: 15%;
+}
+
+.infos1-content, .infos3-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85%;
+    gap: 5%;
+}
+
+.imgInfos1 {
+    width: 45%;
+    border-radius: 30px;
+    box-shadow: 5px 2px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.infos1-texts, .infos3-texts {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.infos1-texts p, .infos3-texts p {
+    font-size: 20pt;
+    font-weight: 300;
+    text-align: center;
+}
+
+.infos1-texts button, .infos3-texts button {
+    font-size: 20pt;
+    font-weight: 400;
+    background-color: #0C0059;
+    color: #C0E8FF;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+    transition: all 0.2s;
+}
+
+.backgroundInfos {
+    opacity: 60%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.backgroundInfos4 {
+    opacity: 90%;
+}
+
+.backgroundDiv {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    background-color: #0C0059;
+}
+
+.infos1-texts button:hover, .infos3-texts button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.infos2Title {
+    color: #C0E8FF;
+    font-size: 30pt;
+    margin-top: 30px;
+    margin-left: 30px;
+    max-height: 15%;
+}
+
+.infos2-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    min-height: 75%;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-self: center;
+    justify-self: center;
+    margin-top: 2%;
+    border-radius: 30px;
+    gap: 5%;
+}
+
+.infos2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.oceanosInfos {
+    display: flex;
+    flex-direction: column;
+}
+
+.oceanosInfos h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 25pt;
+}
+
+.mediaInfos {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.oceanos {
+    gap: 25px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lixoOceano {
+    color: #0C0059;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.tempAlta {
+    color: rgb(255, 94, 94);
+}
+
+.tempPadrao {
+    color: #C0E8FF;
+}
+
+.tempBaixa {
+    color: #0FFFF1;
+}
+
+.mediaInfos h3 {
+    font-size: 40pt;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.mediaInfos span {
+    font-size: 25pt;
+    color: #0C0059;
+}
+
+.infos4-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    gap: 5%;
+    align-self: center;
+    justify-self: center;
+}
+
+.infos4-texts {
+    width: 40%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infos4-texts h3 {
+    font-size: 35pt;
+    font-weight: bold;
+    color: #C0E8FF;
+}
+
+.infos4-texts p {
+    font-size: 25pt;
+    font-weight: 300;
+    color: #ffffff;
+}
