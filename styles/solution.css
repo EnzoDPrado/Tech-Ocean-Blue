@@ -74,15 +74,18 @@ body {
 .infos1-content, .infos3-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 85%;
     gap: 5%;
     padding-left: 30px;
 }
 
+.imgInfos1, .imgInfos3 {
+    width: 30%;
+}
 
 .infos1-texts, .infos3-texts {
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -121,7 +124,7 @@ body {
 }
 
 .infos2-texts {
-    width: 40%;
+    width: 70%;
     text-align: end;
     display: flex;
     flex-direction: column;
