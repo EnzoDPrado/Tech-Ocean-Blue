@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+body {
+    background-color: #C0E8FF;
+    font-family: 'Quicksand';
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 40%;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre toda a área da tela */
+}
+
+/* Estilo do conteúdo */
+.content {
+    width: 90%;
+    right: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    color: white; /* Ajuste conforme necessário */
+    font-size: 35pt;
+}
+
+.content-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.content p {
+    color: #dafaff;
+    font-size: 25pt;
+    width: 80%;
+    font-weight: 400;
+}
+
+.content-texts {
+    width: 50%;
+}
+
+.initial {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.ourSolution, .findBotTitle {
+    color: #0C0059;
+    font-size: 35pt;
+    margin-top: 30px;
+    margin-left: 30px;
+    max-height: 15%;
+}
+
+.infos1-content, .infos3-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 85%;
+    gap: 5%;
+    padding-left: 30px;
+}
+
+
+.infos1-texts, .infos3-texts {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.infos1-texts p, .infos3-texts p {
+    font-size: 20pt;
+    font-weight: 300;
+    text-align: start;
+}
+
+.infos1-texts button, .infos3-texts button {
+    font-size: 20pt;
+    font-weight: 400;
+    background-color: #0C0059;
+    color: #C0E8FF;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+    transition: all 0.2s;
+}
+
+.infos-1-projects-images{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 300px;
+}
+
+.infos1-content img{
+    height: 550px;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    height: 300px;
+}
+
+.projectInfo img{
+    height: 250px;
+    width: 500px;
+}
+
+.projectInfo p{
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.infos2-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    gap: 5%;
+    align-self: center;
+    justify-self: center;
+}
+
+.infos2-content img{
+    padding-left: 100px;
+}
+
+.infos2-texts {
+    width: 40%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.infos2-texts h3 {
+    font-size: 35pt;
+    font-weight: bold;
+    color: #C0E8FF;
+}
+
+.infos2-texts p {
+    font-size: 25pt;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.backgroundInfos {
+    opacity: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.backgroundDiv {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    background-color: #0C0059;
+}
+
+.infos1-texts button:hover, .infos3-texts button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.infoSecao{
+    width:150px ;
+}
+
+.icons{
+    padding-right: 30px;
+}
