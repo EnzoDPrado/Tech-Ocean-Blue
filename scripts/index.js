@@ -147,16 +147,7 @@ const obterLixos = async () => {
   
 }
 
-const regions = {
-    "pacifico": [],
-    "atlantico": [],
-    "indico": []
-};
-
-obterTemperatura(regions);
-obterLixos();
-
-const formatarTempo = (segundos) => {
+const formatarTempo = (segundos) => { // Função para transformar segundos no formato: "X meses - Y dias - Z horas - W minutos"
     const meses = Math.floor(segundos / (30 * 24 * 60 * 60));
     segundos -= meses * 30 * 24 * 60 * 60;
     const dias = Math.floor(segundos / (24 * 60 * 60));
@@ -193,3 +184,12 @@ const calcularMediaTempoEntreLixos = (oceansData) => {
 
     return tempoFormatado;
 };
+
+const regions = {
+    "pacifico": [],
+    "atlantico": [],
+    "indico": []
+};
+
+obterTemperatura(regions);
+obterLixos();
