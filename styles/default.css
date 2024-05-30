@@ -20,12 +20,12 @@
 /* Para navegadores baseados em Gecko (Firefox) */
 html {
     scrollbar-width: thin;  /* Largura da barra de rolagem */
-    scrollbar-color: #7da6ff #e3feff;  /* Cor do polegar e do trilho da barra de rolagem */
+    scrollbar-color: #5f92ff #08061f;  /* Cor do polegar e do trilho da barra de rolagem */
 }
 
 /* Para o polegar da barra de rolagem do Firefox */
 ::-moz-scrollbar-thumb {
-    background: #888;
+    background: #0b0627;
     border-radius: 10px;
 }
 
@@ -74,4 +74,301 @@ section {
     right: 20px;
     margin-top: 20px;
     width: 15%;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    bottom: 0;
+    background-color: #0C0059;
+    color: #E0E0E2;
+    border-top: 1px solid #C0E8FF;
+}
+
+.footer-content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-infos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages-redirects {
+    border-right: 1px solid #797878;
+    padding-right: 20px;
+}
+
+.pages-redirects ul li a {
+    color: #E0E0E2;
+    text-decoration: none;
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+
+.pages-redirects ul li a:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.pages-redirects ul li {
+    list-style-type: none;
+}
+
+.footer-infos p {
+    margin: 0px;
+    padding-left: 20px;
+    font-size: 14pt;
+}
+
+
+.fechar-menu {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #00d9ff;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+.fechar-menu:hover {
+    opacity: 70%;
+}
+
+.opacity {
+    opacity: 70%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.sidebar{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 35%;
+  min-width: 200px;
+  background: #000820;
+  z-index: 101;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.sidebar.close{
+  width: 200px;
+  right: -200px;
+}
+.sidebar .logo-details{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .logo-details .logo_name{
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+}
+.sidebar.close .logo-details .logo_name{
+  transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .nav-links{
+  height: 100%;
+  padding: 30px 0 150px 0;
+  overflow: auto;
+}
+.sidebar.close .nav-links{
+  overflow: visible;
+}
+.sidebar .nav-links::-webkit-scrollbar{
+  display: none;
+}
+.sidebar .nav-links li{
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li:hover{
+  background: #1d1b31;
+  cursor: pointer;
+}
+.sidebar .nav-links li .iocn-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar.close .nav-links li .iocn-link{
+  display: block
+}
+.sidebar .nav-links li i{
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sidebar .nav-links li.showMenu i.arrow{
+  transform: rotate(-180deg);
+}
+.sidebar.close .nav-links i.arrow{
+  display: none;
+}
+.sidebar .nav-links li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.sidebar.close .nav-links li a .link_name{
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .nav-links li .sub-menu{
+  padding: 6px 6px 14px 80px;
+  margin-top: -10px;
+  background: #1d1b31;
+  display: none;
+}
+.sidebar .nav-links li.showMenu .sub-menu{
+  display: block;
+}
+.sidebar .nav-links li .sub-menu a{
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.sidebar .nav-links li .sub-menu a:hover{
+  opacity: 1;
+}
+.sidebar.close .nav-links li .sub-menu{
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 10px 20px;
+  border-radius: 0 6px 6px 0;
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar.close .nav-links li:hover .sub-menu{
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li .sub-menu .link_name{
+  display: none;
+}
+.sidebar.close .nav-links li .sub-menu .link_name{
+  font-size: 18px;
+  opacity: 1;
+  display: block;
+}
+.sidebar .nav-links li .sub-menu.blank{
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .nav-links li:hover .sub-menu.blank{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.one {
+  width: 80%;
+  margin-left: 10%;
+  background-color: black;
+  height: 400px;
+}
+
+.sidebar .profile-details{
+  position: fixed;
+  bottom: 0;
+  width: 20%;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1d1b31;
+  padding: 12px 0;
+  transition: all 0.5s ease;
+}
+.sidebar.close .profile-details{
+  background: none;
+  overflow: hidden;
+}
+.sidebar.close .profile-details{
+  width: 78px;
+}
+.sidebar .profile-details .profile-content{
+  display: flex;
+  align-items: center;
+}
+.sidebar .profile-details img{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0 14px 0 12px;
+  background: #1d1b31;
+  transition: all 0.5s ease;
+}
+.sidebar .profile-details:hover {
+  cursor: auto;
+}
+.sidebar.close .profile-details img{
+  padding: 10px;
+}
+.sidebar .profile-details .profile_name,
+.sidebar .profile-details .job{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile_name,
+.sidebar.close .profile-details .job{
+  display: none;
+}
+.sidebar .profile-details .job{
+  font-size: 12px;
 }

@@ -54,7 +54,7 @@ body {
     background-color: black;
 }
 
-.ourSolution, .findBotTitle {
+.ourSolution, .findBotTitle, .publicoAlvo {
     color: #0C0059;
     font-size: 35pt;
     margin-top: 30px;
@@ -62,7 +62,7 @@ body {
     max-height: 15%;
 }
 
-.infos1-content, .infos3-content {
+.infos1-content, .infos3-content, .infos5-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@ body {
     box-shadow: 5px 2px 0px 1px rgba(0, 0, 0, 0.2);
 }
 
-.infos1-texts, .infos3-texts {
+.infos1-texts, .infos3-texts, .infos5-texts {
     width: 40%;
     display: flex;
     align-items: center;
@@ -85,13 +85,13 @@ body {
     gap: 30px;
 }
 
-.infos1-texts p, .infos3-texts p {
+.infos1-texts p, .infos3-texts p, .infos5-texts p{
     font-size: 20pt;
     font-weight: 300;
     text-align: center;
 }
 
-.infos1-texts button, .infos3-texts button {
+.infos1-texts button, .infos3-texts button, .infos5-texts button{
     font-size: 20pt;
     font-weight: 400;
     background-color: #0C0059;
@@ -107,7 +107,7 @@ body {
     opacity: 60%;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -123,7 +123,7 @@ body {
     background-color: #0C0059;
 }
 
-.infos1-texts button:hover, .infos3-texts button:hover{
+.infos1-texts button:hover, .infos3-texts button:hover, .infos5-texts button:hover {
     cursor: pointer;
     opacity: 80%;
 }
@@ -193,7 +193,7 @@ body {
     color: rgb(255, 94, 94);
 }
 
-.tempPadrao {
+.tempNormal {
     color: #C0E8FF;
 }
 
@@ -213,7 +213,7 @@ body {
     color: #0C0059;
 }
 
-.infos4-content {
+.infos4-content, .infos6-content {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -225,7 +225,7 @@ body {
     justify-self: center;
 }
 
-.infos4-texts {
+.infos4-texts, .infos6-texts {
     width: 40%;
     text-align: end;
     display: flex;
@@ -233,14 +233,39 @@ body {
     gap: 20px;
 }
 
-.infos4-texts h3 {
+.infos4-texts h3, .infos6-texts h3{
     font-size: 35pt;
     font-weight: bold;
     color: #C0E8FF;
 }
 
-.infos4-texts p {
+.infos4-texts p, .infos6-texts p {
     font-size: 25pt;
     font-weight: 300;
     color: #ffffff;
+}
+
+.imgInfos5 {
+    width: 30%;
+    border-radius: 40px;
+    box-shadow: 5px 2px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.infos5-texts p {
+    text-align: left;
+    font-size: 30pt;
+}
+
+.infos5-texts p b {
+    color: #0C0059;
+}
+
+.infos6-content {
+    align-items: flex-start;
+}
+
+.infos6-texts {
+    text-align: left;
+    margin-left: 10%;
+    width: 60%;
 }
