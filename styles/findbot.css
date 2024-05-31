@@ -74,7 +74,7 @@ body {
 .infos1-content, .infos3-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 85%;
     gap: 5%;
     padding-left: 30px;
@@ -108,29 +108,32 @@ body {
     transition: all 0.2s;
 }
 
-.infos-1-projects-images{
+.infos1-projects-images{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    height: 300px;
+    height: 80vh;
+    width: 55%;
+    margin-top: -3%;
 }
 
-.infos1-content img{
-    height: 550px;
-}
 
 .projectInfo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 600px;
-    height: 300px;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
 }
 
 .projectInfo img{
-    height: 250px;
-    width: 500px;
+    height: 85%;
+    width: auto;
+    position: relative;
+    margin: 0;
 }
 
 .projectInfo p{
@@ -138,6 +141,7 @@ body {
     writing-mode: vertical-rl;
     font-size: 25px;
     font-weight: 700;
+    margin-right: 30px;
 }
 
 .infos2-content {
@@ -146,17 +150,17 @@ body {
     justify-content: space-between;
     height: 100%;
     width: 90%;
-    gap: 5%;
+    gap: 8%;
     align-self: center;
     justify-self: center;
 }
 
 .infos2-content img{
-    padding-left: 100px;
+    padding-left: 10%;
 }
 
 .infos2-texts {
-    width: 40%;
+    width: 100%;
     text-align: end;
     display: flex;
     flex-direction: column;
@@ -172,7 +176,7 @@ body {
 }
 
 .infos2-texts p {
-    font-size: 25pt;
+    font-size: 22pt;
     font-weight: 300;
     color: #ffffff;
 }
@@ -204,4 +208,9 @@ body {
 
 .icons{
     padding-right: 30px;
+    width: 22%;
+}
+
+.infos3-texts {
+    width: 55%;
 }
