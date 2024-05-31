@@ -214,3 +214,155 @@ body {
 .infos3-texts {
     width: 55%;
 }
+
+@media screen and (max-width: 768px) {
+    header .logo {
+        width: 40%;
+        height: auto;
+    }
+    .content-texts {
+      width: 100% !important;
+      text-align: left;
+    }
+    .ourSolution, .infos2Title, .findBotTitle, .publicoAlvo, .beneficiosTitle, .objetivoTitle {
+        margin-left: 0 !important;
+        text-align: center;
+        margin-top: 90px !important;
+    }
+    .content-main {
+        margin-bottom: 50px;
+    }
+    .imgInfos1 {
+        margin-bottom: 50px !important;
+    }
+    .infos1-content, .infos3-content, .infos5-content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding-left: 0;
+    }
+    .infos1-content img, .infos5-content img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .infos2-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 15%;
+        width: 95%;
+        
+    }
+    .infos2Title {
+        display: none;
+    }
+    .oceanos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 30%;
+        gap: 10px;
+    }
+    .oceanosInfos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .mediaLixo {
+        text-align: center;
+    }
+    .oceanos h3 {
+        font-size: 13pt !important;
+    }
+    .oceanos .tempOceano {
+        font-size: 10pt !important;
+    }
+    .oceanos .lixoOceano {
+        font-size: 10pt !important;
+    }
+    .mediaInfos h3 {
+        font-size: 25pt !important;
+    }
+    .mediaInfos {
+        width: 90%;
+    }
+    .infos2-content {
+        height: 90%;
+    }
+    .infos3-content img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .infos2-texts {
+        width: 85% !important;
+        margin-right: -55px !important;
+    }
+    .infos2-texts p {
+        font-size: 18pt !important;
+    }
+    .infos4-texts {
+        width: 90%;
+    }
+    .infos4-texts p {
+        font-size: 20pt;
+    }
+    .infos2-texts h3 {
+        font-size: 30pt !important;
+    }
+    .infos5-texts p {
+        font-size: 25pt;
+        margin-bottom: 30px;
+    }
+    .imgInfos3 {
+        margin: 40px 0px !important;
+    }
+    .imgInfos5 {
+        margin-bottom: 40px !important;
+    }
+    .infos6-texts {
+        width: 90%;
+    }
+    .infos6-texts p {
+        font-size: 17pt;
+    }
+    .infos1-texts, .infos3-texts, .infos5-texts {
+        width: 80%;
+    }
+    .infos1-content button, .infos3-content button, .infos5-content button {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .infos1-projects-images {
+        width: 100%;
+        height: auto;
+        padding-bottom: 80px;
+        padding-top: 40px;
+    }
+    .infos2-content img {
+        display: none;
+    }
+    .infos2-texts {
+        width: 85% !important;
+        margin-right: 1% !important;
+    }
+    .infos2-content {
+        width: 100%;
+    }
+    .projectInfo {
+        width: 90%;
+        height: auto;
+    }
+    .projectInfo img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .infos3-content img {
+        margin: 40px 0px;
+        padding-right: 0;
+    }
+}

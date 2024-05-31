@@ -378,3 +378,56 @@ footer {
 .sidebar .profile-details .job{
   font-size: 12px;
 }
+
+@media screen and (max-width: 768px) {
+  header .logo {
+      width: 40%;
+      height: auto;
+  }
+  .content-texts h1 {
+      font-size: 34pt;
+      width: 90%;
+  }
+  .content-texts p {
+      width: 90%;
+  }
+  .ourSolution, .infos2Title, .findBotTitle, .publicoAlvo, .beneficiosTitle, .objetivoTitle {
+    font-size: 25pt !important;
+    margin-bottom: 20px !important;
+    margin-top: 50px !important;
+    padding-left: 0;
+    width: 95%;
+  }
+  .infos1, .infos3, .infos5 {
+    overflow: hidden;
+    height: auto;
+    min-height: 100vh;
+  }
+  .initial {
+    height: 100vh;
+  }
+  .infoSecao {
+    width: 40%;
+  }
+  .footer-infos {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer-content {
+    width: 90%;
+  }
+  footer {
+    text-align: center;
+  }
+  .pages-redirects {
+    border-right: none;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .backgroundInfos {
+    object-fit:none !important;
+  }
+}
