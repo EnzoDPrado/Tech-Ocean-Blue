@@ -41,6 +41,12 @@ header {
     top: 0;
     height: 60px;
     z-index: 100;
+    transition: all 0.5s;
+}
+
+.header-scrolled {
+    background-color: rgba(12, 0, 89, 0.2);
+
 }
 
 header .header-content {
