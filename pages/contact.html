@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/default.css" />
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Find bot</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="sidebar close">
+          <div class="logo-details">
+            <span class="fechar-menu" onclick="fecharMenu()">X</span>
+            <span class="logo_name">Tech OceanBlue</span>
+          </div>
+          <ul class="nav-links">
+              <li onclick="redirectPage('index')">
+                  <a href="#">
+                      <i class='bx bx-grid-alt' ></i>
+                      <span class="link_name">Home</span>
+                  </a>
+              </li>
+              <li onclick="redirectPage('solution')">
+                  <div class="iocn-link">
+                      <a href="#">
+                      <i class='bx bx-collection' ></i>
+                      <span class="link_name">Nossa solução</span>
+                      </a>
+                  </div>
+              </li>
+              <li onclick="redirectPage('findbot')">
+                  <div class="iocn-link">
+                      <a href="#">
+                      <i class='bx bx-line-chart' ></i>
+                      <span class="link_name">Detalhes do FindBot</span>
+                      </a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <main>
+      <header>
+        <div class="header-content">
+          <img
+            class="logo"
+            src="../assets/images/logo.png"
+            alt="Tech OceanBlue"
+            onclick="redirectPage('index')"
+          />
+          <img class="btn-menu" onclick="abrirMenu()" src="../assets/images/menu.png" alt="Menu" />
+        </div>
+      </header>
+    <section class="contact">
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+              <source src="../assets/videos/findbot.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+        <form onsubmit="sendEmail(event)" class="form">
+            <h1>Contato</h1>
+            <div class="input-container">
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Seu nome"
+                    class="input"
+                />
+                <input
+                    placeholder="Seu email"
+                    type="text"
+                    id="userMail"
+                    class="input"
+                />
+            </div>
+            <input
+                type="text"
+                placeholder="Assunto"
+                id="subject"
+                class="input-subject"
+            />
+            <textarea
+                placeholder="Mensagem"
+                id="message"
+                maxlength="1000"
+                class="textarea"
+            ></textarea>
+            <div class="submit-container">
+                <input
+                    type="submit"
+                    value="Enviar"
+                    id="submitButton"
+                    class="submit-button"
+                />
+            </div>
+        </form>
+        
+    </section>  
+    <footer>
+        <div class="footer-content">
+            <div class="footer-infos">
+                <div class="pages-redirects">
+                    <ul>
+                        <li><a onclick="redirectPage('index')">Home</a></li>
+                        <li><a onclick="redirectPage('solution')">Solução</a></li>
+                        <li><a onclick="redirectPage('findbot')">FindBot</a></li>
+                    </ul> 
+                </div>
+                <p>RUA DO PINHEIRO 402, PINHEDOS, 13131313 SP - BRASIL | CNPJ 19.995.390/0001-05</p>
+            </div>
+            <p>© 2024 Tech OceanBlue. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="../scripts/default.js"></script>
+  </body>
+</html>
